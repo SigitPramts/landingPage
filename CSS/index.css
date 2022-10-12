@@ -1,0 +1,345 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+/* ===== Sidebar ===== */
+ .sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 15%;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;  
+}
+
+.sidebar.close{
+    width: 58px;
+}
+
+/* ===== Reusable code - Here ===== */
+.sidebar li{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.sidebar .text{
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+.sidebar .menu-bar{
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+.menu-bar::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar .text{
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 1;
+}
+.sidebar.close .text{
+    opacity: 0;
+}
+/* =========================== */
+
+.sidebar header{
+    position: relative;
+}
+
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    font-size: 22px;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.sidebar .menu{
+    margin-top: 380px;
+}
+
+.sidebar li a{
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03); 
+}
+
+
+.sidebar li a:hover .text{
+    color: var(--primary-color);
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+.home .text{
+    color: var(--body-color);
+    padding: 12px 60px;
+}
+
+.sidebar.close ~ .home{
+    left: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.vertical-center{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 400px;
+}
+
+.s1{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url("../Background/97149633_p0.jpg");
+    background-position: 85% 50%;
+    background-repeat: no-repeat;
+    background-size: 115%;
+}
+
+.s2{
+    background: url("../Background/koin_3.png");
+    background-color: #322056;
+    background-position: 85% 50% ;
+    background-repeat: no-repeat;
+    background-size: 30vmax;
+}
+
+.s3{
+    background-color: #454179;
+}
+
+.s4{
+    background: #FFF9F9;
+}
+
+.coin{
+    right: 80px;
+    top: 40px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    color: aqua;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.coin img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.coin h1{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 1px;
+}
+
+.coin h3{
+    margin-bottom: -1px;
+}
+
+.custom-section h2{
+    font-weight: 700;
+    font-size: 4rem;
+    color: antiquewhite;
+    white-space: nowrap;
+}
+
+p{
+    padding-top: 10%;
+    color: antiquewhite;
+    font-size: 1.1rem;
+}
+
+/* CSS SECTION 3*/
+.kiri p{
+    padding-top: 1px;
+    font-size: 1.1rem;
+}
+
+.kanan{
+    margin-left: 5%;
+    text-align: left;
+}
+
+.email-box{
+    margin-top: 5%;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+}
+
+.tbox, .btnKanan{
+ border: none;
+ outline: none;   
+}
+
+.tbox{
+    width: 260px;
+    padding: 0 10px;
+}
+
+.kanan .btnKanan{
+    background: #322056;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+/* CSS SECTION 4*/ 
+.containers1{
+	text-align: center;
+    margin-top: 80px;
+    width: 100%;
+	background: transparent;
+}
+.header{
+	padding-top: 30px;
+	color: #444;
+	font-size:  20px;
+	margin: auto;
+	line-height: 50px;
+}
+
+.sub-container{
+	max-width: 1200px;
+	margin: auto;
+	padding: 30px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
+}
+
+.teams{
+	margin: 10px;
+	padding: 22px;
+	max-width: 30%;
+	cursor: pointer;
+	transition: 0.4s;
+	box-sizing: border-box;
+}
+
+.teams:hover{
+	background: #dddd;
+	border-radius: 12px;
+}
+
+.teams img{
+	width: 170px;
+	height: 180px;
+	border-radius: 12px;
+}
+
+.name {
+	padding: 12px;
+	font-weight: bold;
+    color: #000000;
+	font-size: 16;
+	text-transform: uppercase;
+}
+
+.nim {
+	color: #888;
+}
+
+.social-media{
+	margin:  14px;
+}
+
+.social-media a{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	transition: .4s;
+}
+
+.social-media a i{
+	color: #444;
+}
+
+.social-media a:hover{
+	transform: scale(1.5);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(39, 15, 15);
+    color: white;
+    text-align: center;
+  }
