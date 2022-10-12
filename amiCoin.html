@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amikom Coin</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- CSS only -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="Javascript/emailPopup.js">
+    <link rel="stylesheet" href="Javascript/sideBar.js">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="sidebar close">
+
+        <header>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#Home">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#AmiToken">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text">AMICoin</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#Community">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Community</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#about">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">About Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div id="fullPage">
+            
+            <div class="section s1">
+                <div class="text">                
+                <div class="container">
+                    <div class="row custom-section">
+                        <div class="col-lg-5">
+                            <h2>Uang anda untuk</h2>
+                            <h2>mata uang digital</h2>
+                            <h2>pengembangan</h2>
+                            <h2>dari Amikom</h2>
+                            <p>Amicoin adalah cryptocurrency yang di kembangkan oleh Amikom yang didesain untuk mahasiswa agar dapat mempermudah transaksi nontunai secara digital.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="section s2">
+            <div class="text">
+                <div class="container">
+                    <div class="row custom-section">
+                        <div class="col-lg-5">
+                            <h2>AMIKOM</h2>
+                            <h2>COIN</h2>
+                            <p>Amicoin adalah cryptocurrency yang di kembangkan oleh Amikom yang didesain untuk mahasiswa agar dapat mempermudah transaksi nontunai secara digital.</p>
+                        </div>
+                    </div>
+
+                    <div class="coin">
+                        <img src="./Icon/Amikomcoin.png">
+                        <div>
+                            <h1>$ <span id="dogecoin"></span></h1>
+                            <h3>AMICoin</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+
+            <div class="section s3">
+                <div class="text-light p-5 rounded-lg m-3">
+                  <h1 class="display-4 text-center fw-bold">KEEP UP DATE VIA SOCIAL MEDIA</h1>
+                </div>
+                <div class="text">
+                    <div class="container">
+                        <div class="row">
+                          <div class="kiri col">
+                            <p>AMICoin dimulai sebagai proyek komunitas untuk pengembangan final project semester akhir. Ada banyak cara untuk terlibat langsung dalam
+                                komunitas Mata uang digital AMICoin, salah satu caranya dengan join ke platform komunitas pribadi kami.</p>
+                            <a href="https://www.facebook.com/amikomjogja/" target="_blank"><i class="bi bi-facebook fa-3x" style="color: #EEEEEE"></i></a> 
+                            <img src="./Icon/ilusi.png" width="40px">
+                            <a href="https://discord.gg/Ux8wKn6w" target="_blank"><i class="bi bi-discord fa-3x" style="color: #EEEEEE"></i></a>  
+                            <img src="./Icon/ilusi.png" width="40px">
+                            <a href="telegram.com" target="_blank"><i class="bi bi-telegram fa-3x" style="color: #EEEEEE"></i></a> 
+                          </div>
+                          <div class="kanan col">
+                                <h2>Dapatkan berita terbaru dengan memasukkan email anda</h2>
+                                <form name="test" onsubmit="cekemail(this.email.value); return false">
+                                    <div class="email-box">
+                                        <input class="tbox" type="email" name="email" id="pesan" placeholder="contoh@email.com">
+                                        <button class="btnKanan" type="submit" value="submit" name="button">Ikuti</button>
+                                    </div>
+                                </form>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                </div>
+
+            <div class="section s4">
+                <div class="text">
+                    <div class="containers1">
+                        <div class="sub-container">
+                            <div class="teams">
+                                <img src="data:image/jpeg;base64,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">
+                                <div class="name">Widixon Antonio</div>
+                                <div class="nim">20.11.3410</div>
+                    
+                                <div class="social-media">
+                                    <a href="https://www.instagram.com/widixon21"target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://twitter.com"target="_blank"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://github.com/"target="_blank"><i class="fa fa-github"></i></a>
+                                </div>
+                            </div>
+                    
+                            <div class="teams">
+                                <img src="Profile/sigit.jpg">
+                                <div class="name">Sigit Pramono</div>
+                                <div class="nim">20.11.3424</div>
+                    
+                                <div class="social-media">
+                                    <a href="https://www.instagram.com/sigitpramts"target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.facebook.com/Gitou007/"target="_blank"><i class="fa fa-facebook-official"></i></a>
+                                    <a href="https://github.com/"target="_blank"><i class="fa fa-github"></i></a>
+                                </div>
+                            </div>
+                    
+                            <div class="teams">
+                                <img src="Profile/dany.png">
+                                <div class="name">Dany Kurniawan</div>
+                                <div class="nim">20.11.3372</div>
+                    
+                                <div class="social-media">
+                                    <a href="https://www.instagram.com/kecapkering"target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://twitter.com"target="_blank"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://github.com/"target="_blank"><i class="fa fa-github"></i></a>
+                                </div>
+                            </div>
+                    
+                            <div class="teams">
+                                <img src="Profile/rizal.jpg">
+                                <div class="name">Muhammad Rizal</div>
+                                <div class="nim">20.11.3391</div>
+                    
+                                <div class="social-media">
+                                    <a href="https://www.instagram.com/rzll03"target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCwuQTc6Y0480gSt7gnI8pRg&e=ATPTdhoX79pUrLpRNvlrdVGAYujyd8jGE7adQ6NDMyryCfbxemH23WRSfzBD6epYGFhG2vDkhuUJpj4YV9J2Lg&s=1"target="_blank"><i class="fa fa-youtube-play"></i></a>
+                                    <a href="https://github.com/"target="_blank"><i class="fa fa-github"></i></a>
+                                </div>
+                            </div>
+                    
+                            <div class="teams">
+                                <img src="Profile/joshua.png">
+                                <div class="name">Joshua Agung</div>
+                                <div class="nim">20.11.3384</div>
+                    
+                                <div class="social-media">
+                                    <a href="https://www.instagram.com/harymajuri"target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://twitter.com"target="_blank"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://github.com/"target="_blank"><i class="fa fa-github"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>	  
+            </div>
+        </div>
+    </section>
+    
+    <script src="Javascript/apiCrypto.js"></script>
+    <script src="Javascript/emailPopup.js"></script>
+    <script src="Javascript/sideBar.js"></script>
+
+    <!--FULLPAGE-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js" 
+    integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new fullpage('#fullPage', {
+            auroScrolling : true,
+            navigation : true,
+            anchors: ['Home', 'AmiToken', 'Community', 'about']
+        })
+    </script>
+
+
+    <!--SIDEBAR-->
+
+
+</body>
+</html>
